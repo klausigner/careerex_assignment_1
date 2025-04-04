@@ -1,0 +1,464 @@
+:root {
+    --cream-low: #FFFFF0;
+    --cream-mid: #F9F8E4;
+    --cream-high: #F0EAD6;
+
+    --black-low: #A3A3A3;
+    --black-mid: #484848;
+    --black-high: #1A1A1A;
+}
+
+@font-face {
+    font-family: 'Stratford';
+    src: url(Stratford\ Serial\ Regular.otf) format('opentype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stratford';
+    src: url(Stratford\ Serial\ Medium.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(Satoshi-Medium.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(Satoshi-Bold.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    background-color: var(--cream-low);
+    margin-top: 64px;
+    margin-left: 356px;
+    margin-right: 356px;
+    margin-bottom: 0px;
+    font-family: 'Satoshi';
+    font-family: 'Stratford';
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.aboutme-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4px;
+    font-family: 'Stratford';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: var(--black-high);
+}
+
+.aboutme-link:hover {
+    color: var(--black-low);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bio-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+
+.bio-section > * {
+    animation: fadeIn 1s ease-out backwards;
+  }
+  
+.bio-section .skills { animation-delay: 0.2s; }
+.bio-section .name { animation-delay: 0.4s; }
+.bio-section .contact { animation-delay: 0.6s; }
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+.skills{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    font-family: 'Stratford';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: var(--black-mid);
+    width: 100%;
+    flex-wrap: wrap;
+}
+.separator{
+    color: var(--cream-high);
+}
+
+.name {
+    font-family: 'Stratford';
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: 0px;
+    color: var(--black-high);
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+}
+
+.contact-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: var(--cream-high);
+    border-radius: 8px;
+    color: var(--black-high);
+    font-family: 'Stratford';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: var(--black-high);
+}
+
+.contact-link:hover {
+    color: var(--black-low);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+
+.about-text {
+    font-family: 'Satoshi';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: var(--black-mid);
+    width: 100%;
+}
+
+span {
+    color: var(--black-low);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Satoshi';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: var(--black-mid);
+}
+
+.link:hover {
+    color: var(--black-low);
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.me-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+
+.me-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+.me-title {
+    font-family: 'Satoshi';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: var(--black-mid);
+}
+
+.me-text {
+    font-family: 'Satoshi';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: var(--black-mid);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+    background-color: var(--cream-high);
+    border-radius: 8px;
+    width: 100%;
+    
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: var(--cream-mid);
+    border-radius: 4px;
+}
+
+.card-title {
+    font-family: 'Stratford';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: var(--black-mid);
+}
+
+.card-text {
+    font-family: 'Satoshi';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: var(--black-mid);
+}
+
+.card:hover {
+    background-color: var(--black-high);
+    color: var(--cream-mid);
+    transition: background-color 0.3s ease-in-out;
+
+    .card-title {
+        color: var(--cream-low);
+    }
+
+    .card-text {
+        color: var(--cream-low);
+    }
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1.5px solid var(--cream-high);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.footer-text {
+    font-family: 'Satoshi';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: var(--black-low);
+}
+
+@media (max-width: 600px) {
+    body{
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .avatar {
+        width: 44px;
+        height: 44px;
+    }
+
+    .name {
+        font-family: 'Stratford';
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 0px;
+        color: var(--black-high);
+        width: 100%;
+    }
+
+    .footer-text {
+        font-family: 'Satoshi';
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0px;
+        color: var(--black-low);
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    body{
+        margin-left: 56px;
+        margin-right: 56px;
+    }
+
+    .avatar {
+        width: 52px;
+        height: 52px;
+    }
+
+    .name {
+        font-family: 'Stratford';
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 0px;
+        color: var(--black-high);
+        width: 100%;
+    }
+
+    .footer-text {
+        font-family: 'Satoshi';
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        color: var(--black-low);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-low)
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .name {
+        font-family: 'Stratford';
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 72px;
+        letter-spacing: 0px;
+        color: var(--black-high);
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    body{
+        margin-left: 232px;
+        margin-right: 232px;
+    }
+
+    .name {
+        font-family: 'Stratford';
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 80px;
+        letter-spacing: 0px;
+        color: var(--black-high);
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1500px) {
+    body{
+        margin-left: 312px;
+        margin-right: 312px;
+    }
+
+    .name {
+        font-family: 'Stratford';
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 80px;
+        letter-spacing: 0px;
+        color: var(--black-high);
+        width: 100%;
+    }
+}
